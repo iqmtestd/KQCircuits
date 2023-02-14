@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="4722.3" height="2539.5400000000004" viewBox="-669.65 -2087.8900000000003 4722.3 2539.5400000000004">
+<defs>
+<style type="text/css">
+	/* CPW centre */
+	.l16d0 {
+		fill: none;
+	}
+	/* Airbridge */
+	.l29d3 {
+		fill: #666;
+		fill-opacity: 0.5;
+	}
+	/* Airbridge pads */
+	.l28d3 {
+		fill: #7b7c7f;
+		fill-opacity: 0.5;
+	}
+	/* Background */
+	rect {
+		fill: none;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		/* CPW gap */
+		.l11d1 {
+			fill: white;
+		}
+		/* Airbridge pads */
+		.l28d3 {
+			fill: #fafcf5;
+			fill-opacity: 0.5;
+		}
+		/* Airbridge */
+		.l29d3 {
+			fill: #d1d1d1;
+			fill-opacity: 0.5;
+		}
+	}
+
+	/* NOT SHOWN */
+
+	/* CPW avoidance */
+	.l14d0 {
+		fill-opacity: 0.0;
+	}
+	/* CPW refpoints */
+	.l39t0 {
+		fill-opacity: 0.0;
+	}
+	/* Text */
+	.l225t0 {
+		fill-opacity: 0.0;
+	}
+</style>
+<g id="Waveguide$Coplanar$3" >
+<polygon class="l14d0" points="3798.0,326.0 3612.0,574.0 3652.0,604.0 3838.0,356.0"/>
+<polygon class="l14d0" points="3652.0,1196.0 3612.0,1226.0 3798.0,1474.0 3838.0,1444.0"/>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 -0.0)">base</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(3705.0 -450.0)">port_a</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(4041.0 -702.0)">port_a_corner</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(3705.0 -1350.0)">port_b</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(4041.0 -1098.0)">port_b_corner</text>
+<text class="l39t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(3705.0 -450.0)">a</text>
+<text class="l39t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(3705.0 -1350.0)">b</text>
+<use transform="translate(3705.0 450.0) rotate(216.86989764584402) scale(1.0)" xlink:href="#Waveguide$Coplanar$Straight$8"/>
+<use transform="translate(3105.0 525.0) rotate(306.86989764584405) scale(1.0)" xlink:href="#Waveguide$Coplanar$Curved$3"/>
+<use transform="translate(2853.0099999999998 188.99) rotate(143.13010235415598) scale(1.0)" xlink:href="#Waveguide$Coplanar$Straight$9"/>
+<use transform="translate(2925.0 660.0) rotate(233.13010235415598) scale(1.0)" xlink:href="#Waveguide$Coplanar$Curved$1"/>
+<use transform="translate(2505.0 659.99) rotate(90.0)" xlink:href="#Waveguide$Coplanar$Straight$4"/>
+<use transform="translate(2925.0 1140.0) rotate(180.0)" xlink:href="#Waveguide$Coplanar$Curved$1"/>
+<use transform="translate(2672.99 1475.9899999999998) rotate(36.86989764584401) scale(1.0)" xlink:href="#Waveguide$Coplanar$Straight$5"/>
+<use transform="translate(3105.0 1275.0) rotate(126.86989764584402) scale(1.0)" xlink:href="#Waveguide$Coplanar$Curved$2"/>
+<use transform="translate(3356.9900000000002 1611.01) rotate(323.13010235415595) scale(1.0)" xlink:href="#Waveguide$Coplanar$Straight$10"/>
+</g>
+<g id="Waveguide$Coplanar$Straight$5" >
+<polygon class="l11d1" points="0.0,45.0 0.0,105.0 225.01999999999998,105.0 225.01999999999998,45.0"/>
+<polygon class="l11d1" points="0.0,-105.0 0.0,-45.0 225.01999999999998,-45.0 225.01999999999998,-105.0"/>
+<polygon class="l14d0" points="0.0,-155.0 0.0,155.0 225.01999999999998,155.0 225.01999999999998,-155.0"/>
+<polygon class="l16d0" points="0.0,-45.0 0.0,45.0 225.01999999999998,45.0 225.01999999999998,-45.0"/>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 -0.0)">base</text>
+</g>
+<g id="Waveguide$Coplanar$Straight$8" >
+<polygon class="l11d1" points="0.0,45.0 0.0,105.0 435.01,105.0 435.01,45.0"/>
+<polygon class="l11d1" points="0.0,-105.0 0.0,-45.0 435.01,-45.0 435.01,-105.0"/>
+<polygon class="l14d0" points="0.0,-155.0 0.0,155.0 435.01,155.0 435.01,-155.0"/>
+<polygon class="l16d0" points="0.0,-45.0 0.0,45.0 435.01,45.0 435.01,-45.0"/>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 -0.0)">base</text>
+</g>
+<g id="Waveguide$Coplanar$Straight$7" >
+<polygon class="l11d1" points="0.0,45.0 0.0,105.0 60.010000000000005,105.0 60.010000000000005,45.0"/>
+<polygon class="l11d1" points="0.0,-105.0 0.0,-45.0 60.010000000000005,-45.0 60.010000000000005,-105.0"/>
+<polygon class="l14d0" points="0.0,-155.0 0.0,155.0 60.010000000000005,155.0 60.010000000000005,-155.0"/>
+<polygon class="l16d0" points="0.0,-45.0 0.0,45.0 60.010000000000005,45.0 60.010000000000005,-45.0"/>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 -0.0)">base</text>
+</g>
+<g id="Waveguide$Composite$3" >
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 -0.0)">base</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(3705.0 -450.0)">port_a</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(4041.0 -702.0)">port_a_corner</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(3705.0 -1350.0)">port_b</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(4041.0 -1098.0)">port_b_corner</text>
+<text class="l39t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(3705.0 -450.0)">a</text>
+<text class="l39t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(3705.0 -1350.0)">b</text>
+<use transform="translate(0.0 0.0)" xlink:href="#Waveguide$Coplanar$3"/>
+</g>
+<g id="Waveguide$Coplanar$Curved" >
+<polygon class="l11d1" points="20.65,-374.42999999999995 17.35,-314.52000000000004 33.25,-313.64 64.72,-308.69 95.53,-300.59000000000003 125.37,-289.42 153.92,-275.29 180.91000000000003,-258.36 206.05,-238.79999999999998 229.08,-216.79000000000002 249.78000000000003,-192.57999999999998 267.94,-166.4 283.35,-138.52 295.88,-109.23 305.39,-78.83 311.79,-47.620000000000005 315.0,-15.93 315.0,0.0 375.0,0.0 375.0,-18.96 371.16999999999996,-56.690000000000005 363.56,-93.85 352.24,-130.04 337.33000000000004,-164.91 318.97,-198.1 297.36,-229.26000000000002 272.72,-258.09000000000003 245.29,-284.28000000000003 215.36,-307.58 183.24,-327.73 149.24,-344.54 113.73000000000002,-357.84 77.05,-367.49 39.59,-373.39"/>
+<polygon class="l11d1" points="28.919999999999998,-524.2 25.61,-464.29 49.089999999999996,-463.00000000000006 95.54,-455.69000000000005 141.02,-443.72 185.06,-427.23 227.22000000000003,-406.39000000000004 267.05,-381.39000000000004 304.16,-352.51 338.17,-320.03 368.72999999999996,-284.28000000000003 395.52,-245.64 418.28000000000003,-204.49 436.78000000000003,-161.25 450.82,-116.37 460.26000000000005,-70.3 465.0,-23.509999999999998 465.0,0.0 525.0,0.0 525.0,-26.550000000000004 519.64,-79.37 508.99,-131.38 493.14,-182.06 472.26,-230.87 446.56,-277.33 416.31,-320.97 381.8,-361.32 343.41,-398.00000000000006 301.51,-430.61 256.53000000000003,-458.82 208.94000000000003,-482.36 159.22,-500.98 107.87,-514.48 55.42,-522.74"/>
+<polygon class="l14d0" points="31.67,-574.13 14.6,-264.6 27.98,-263.86 54.45,-259.69 80.37,-252.87 105.47,-243.48 129.49,-231.6 152.19,-217.35 173.34,-200.89000000000001 192.72000000000003,-182.38 210.14,-162.01 225.41,-139.99 238.38,-116.53999999999999 248.92,-91.89999999999999 256.92,-66.32000000000001 262.3,-40.06 265.0,-13.4 265.0,0.0 575.0,0.0 575.0,-29.08 569.13,-86.92999999999999 557.46,-143.9 540.1,-199.4 517.23,-252.86 489.09,-303.75 455.95,-351.53 418.17,-395.74 376.11,-435.90000000000003 330.23,-471.62 280.97,-502.52000000000004 228.84,-528.3 174.38,-548.69 118.14,-563.48 60.7,-572.53"/>
+<polygon class="l16d0" points="465.0,0.0 375.0,0.0 374.99999999999994,-18.967063027245256 371.1788033830629,-56.69691560475939 363.56324252211806,-93.84621073065786 352.2406244076758,-130.04644246247892 337.33024308547357,-164.91173531469434 318.97597259589224,-198.0940424206155 297.3587543959699,-229.25640983809956 272.71033421082416,-258.0932753373154 245.29495070384797,-284.28563457191905 215.3676744230961,-307.57034117699095 183.24030895361113,-327.7325399624544 149.24191632950908,-344.54424513871066 113.73018097531181,-357.83993886322656 77.05436343700822,-367.49099990482983 39.59254884868114,-373.38346835771256 20.651448490787402,-374.42830982017057 25.6085515092126,-464.2916901798294 49.08745115131887,-462.9965316422875 95.54563656299177,-455.6890000951702 141.02981902468818,-443.7200611367735 185.05808367049093,-427.2357548612893 227.21969104638887,-406.3874600375457 267.0523255769036,-381.38965882300914 304.16504929615195,-352.51436542808096 338.16966578917584,-320.0267246626847 368.72124560403006,-284.2835901619004 395.52402740410776,-245.64595757938451 418.2897569145264,-204.48826468530564 436.7793755923242,-161.25355753752098 450.816757477882,-116.37378926934217 460.2611966169371,-70.30308439524062 465.0,-23.512936972754744"/>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 -0.0)">base</text>
+</g>
+<g id="Waveguide$Coplanar$Curved$3" >
+<polygon class="l11d1" points="105.0,-360.0 88.2,-302.40000000000003 103.17999999999999,-298.03000000000003 132.13,-286.37 159.79000000000002,-271.90999999999997 185.88,-254.79 210.16000000000003,-235.17 232.37,-213.24 252.31,-189.23000000000002 269.78000000000003,-163.37 284.6,-135.9 296.64,-107.11 305.78,-77.26 311.92,-46.660000000000004 315.0,-15.61 315.0,0.0 375.0,0.0 375.0,-18.580000000000002 371.33000000000004,-55.55 364.02,-91.98 353.15,-127.50999999999999 338.81,-161.79000000000002 321.15999999999997,-194.48000000000002 300.37,-225.27999999999997 276.63,-253.85999999999999 250.19000000000003,-279.96000000000004 221.29000000000002,-303.32 190.23,-323.7 157.3,-340.91999999999996 122.83,-354.80000000000007"/>
+<polygon class="l11d1" points="147.0,-504.0 130.2,-446.4 152.31,-439.95 195.04999999999998,-422.74 235.88,-401.39000000000004 274.40000000000003,-376.11 310.23,-347.15000000000003 343.02,-314.78999999999996 372.46000000000004,-279.34000000000003 398.24,-241.16 420.13,-200.62 437.9,-158.11 451.38,-114.06 460.45000000000005,-68.88 465.0,-23.040000000000003 465.0,0.0 525.0,0.0 525.0,-26.009999999999998 519.86,-77.77 509.63,-128.77 494.4,-178.51 474.34,-226.51 449.63,-272.28000000000003 420.52,-315.39 387.28000000000003,-355.41 350.26000000000005,-391.94000000000005 309.81,-424.64 266.32,-453.17999999999995 220.22000000000003,-477.28999999999996 171.97,-496.72"/>
+<polygon class="l14d0" points="161.0,-552.0 74.2,-254.4 86.8,-250.72 111.16,-240.92 134.43,-228.75 156.38,-214.34 176.8,-197.83999999999997 195.49,-179.39 212.26,-159.19 226.96,-137.44 239.43,-114.33 249.56,-90.11000000000001 257.24,-65.0 262.40000000000003,-39.260000000000005 265.0,-13.129999999999999 265.0,0.0 575.0,0.0 575.0,-28.490000000000002 569.37,-85.18 558.1600000000001,-141.04000000000002 541.49,-195.51000000000002 519.51,-248.07999999999998 492.45000000000005,-298.21000000000004 460.56000000000006,-345.42 424.17,-389.25000000000006 383.62,-429.27 339.30999999999995,-465.09000000000003 291.68,-496.34999999999997 241.19,-522.74 188.35000000000002,-544.02"/>
+<polygon class="l16d0" points="465.0,0.0 375.0,0.0 375.0,-18.582316450435407 371.3305910537155,-55.55317398465486 364.0186380569443,-91.97902041545638 353.142961917942,-127.50801496150734 338.8126087741668,-161.78479111038766 321.1600988818865,-194.48256107777794 300.3646686174391,-225.27837000095474 276.63432337886707,-253.85656229165048 250.18977630577822,-279.95291985229824 221.2846195321629,-303.3127870502524 190.21955827862962,-323.70732568292567 157.30641522055413,-340.9182125329309 122.82778567264204,-354.79539210233145 104.98920226285838,-360.00315080433637 130.2107977371416,-446.39684919566366 152.31221432735796,-439.9446078976686 195.05358477944588,-422.7417874670691 235.8804417213704,-401.39267431707447 274.39538046783656,-376.10721294974803 310.23022369422176,-347.14708014770173 343.02567662113296,-314.7834377083496 372.4553313825607,-279.3416299990455 398.2399011181135,-241.15743892222207 420.12739122583326,-200.61520888961238 437.897038082058,-158.1119850384926 451.3813619430557,-114.06097958454362 460.44940894628445,-68.88682601534515 465.0,-23.03768354956459"/>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 -0.0)">base</text>
+</g>
+<g id="Waveguide$Coplanar$2" >
+<polygon class="l14d0" points="1147.0,71.0 1107.0,101.0 1293.0,349.0 1333.0,319.0"/>
+<polygon class="l14d0" points="1107.0,101.0 1067.0,131.0 1253.0,379.0 1293.0,349.0"/>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 -0.0)">base</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(1200.0 -225.0)">port_a</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(1536.0 27.0)">port_a_corner</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(1200.0 -225.0)">port_b</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(864.0 -477.0)">port_b_corner</text>
+<text class="l39t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(1200.0 -225.0)">a</text>
+<text class="l39t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(1200.0 -225.0)">b</text>
+<use transform="translate(1200.0 225.0) rotate(143.13010235415598) scale(1.0)" xlink:href="#Waveguide$Coplanar$Straight$3"/>
+<use transform="translate(1320.0 660.0) rotate(233.13010235415598) scale(1.0)" xlink:href="#Waveguide$Coplanar$Curved$1"/>
+<use transform="translate(900.0 659.99) rotate(90.0)" xlink:href="#Waveguide$Coplanar$Straight$4"/>
+<use transform="translate(1320.0 1140.0) rotate(180.0)" xlink:href="#Waveguide$Coplanar$Curved$1"/>
+<use transform="translate(1067.99 1475.9899999999998) rotate(36.86989764584401) scale(1.0)" xlink:href="#Waveguide$Coplanar$Straight$5"/>
+<use transform="translate(1500.0 1275.0) rotate(126.86989764584402) scale(1.0)" xlink:href="#Waveguide$Coplanar$Curved$2"/>
+<use transform="translate(1751.9900000000002 1611.01) rotate(323.13010235415595) scale(1.0)" xlink:href="#Waveguide$Coplanar$Straight$5"/>
+<use transform="translate(1680.0 1140.0) rotate(53.13010235415599) scale(1.0)" xlink:href="#Waveguide$Coplanar$Curved$1"/>
+<use transform="translate(2100.0 1140.01) rotate(270.0)" xlink:href="#Waveguide$Coplanar$Straight$4"/>
+<use transform="translate(1680.0 660.0)" xlink:href="#Waveguide$Coplanar$Curved$1"/>
+<use transform="translate(1932.01 324.01000000000005) rotate(216.86989764584402) scale(1.0)" xlink:href="#Waveguide$Coplanar$Straight$6"/>
+<use transform="translate(1500.0 525.0) rotate(306.86989764584405) scale(1.0)" xlink:href="#Waveguide$Coplanar$Curved$3"/>
+<use transform="translate(1248.01 188.99) rotate(143.13010235415598) scale(1.0)" xlink:href="#Waveguide$Coplanar$Straight$7"/>
+</g>
+<g id="Waveguide$Coplanar$1" >
+<polygon class="l14d0" points="573.86,-71.62 541.59,-33.42 778.4100000000001,166.62 810.6700000000001,128.42000000000002"/>
+<polygon class="l14d0" points="766.39,1613.48 553.61,1838.92 589.97,1873.2400000000002 802.75,1647.8"/>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 -0.0)">base</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(660.0 -66.6)">port_a</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(931.02 254.25)">port_a_corner</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(660.0 -1726.2)">port_b</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(965.4399999999999 -2014.4900000000002)">port_b_corner</text>
+<text class="l39t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(660.0 -66.6)">a</text>
+<text class="l39t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(660.0 -1726.2)">b</text>
+<use transform="translate(660.0 66.6) rotate(130.18792570921784) scale(1.0)" xlink:href="#Waveguide$Coplanar$Straight$1"/>
+<use transform="translate(457.34000000000003 957.38) rotate(220.18792570921786) scale(1.0)" xlink:href="#Waveguide$Coplanar$Curved"/>
+<use transform="translate(169.05 1262.81) rotate(43.34529916691872) scale(1.0)" xlink:href="#Waveguide$Coplanar$Straight$2"/>
+</g>
+<g id="Waveguide$Coplanar$Straight$1" >
+<polygon class="l11d1" points="0.0,45.0 0.0,105.0 811.2900000000001,105.0 811.2900000000001,45.0"/>
+<polygon class="l11d1" points="0.0,-105.0 0.0,-45.0 811.2900000000001,-45.0 811.2900000000001,-105.0"/>
+<polygon class="l14d0" points="0.0,-155.0 0.0,155.0 811.2900000000001,155.0 811.2900000000001,-155.0"/>
+<polygon class="l16d0" points="0.0,-45.0 0.0,45.0 811.2900000000001,45.0 811.2900000000001,-45.0"/>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 -0.0)">base</text>
+</g>
+<g id="Waveguide$Coplanar$Straight$10" >
+<polygon class="l11d1" points="0.0,45.0 0.0,105.0 435.01,105.0 435.01,45.0"/>
+<polygon class="l11d1" points="0.0,-105.0 0.0,-45.0 435.01,-45.0 435.01,-105.0"/>
+<polygon class="l14d0" points="0.0,-155.0 0.0,155.0 435.01,155.0 435.01,-155.0"/>
+<polygon class="l16d0" points="0.0,-45.0 0.0,45.0 435.01,45.0 435.01,-45.0"/>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 -0.0)">base</text>
+</g>
+<g id="Waveguide$Coplanar$Curved$1" >
+<polygon class="l11d1" points="225.0,-300.0 189.00000000000003,-252.0 201.99,-242.25 225.84,-220.19000000000003 247.29,-195.8 266.11,-169.32999999999998 282.12,-141.06 295.13,-111.30000000000001 305.01,-80.35 311.66,-48.550000000000004 315.0,-16.240000000000002 315.0,0.0 375.0,0.0 375.0,-19.34 371.02000000000004,-57.800000000000004 363.11,-95.66000000000001 351.34999999999997,-132.49 335.86,-167.93 316.8,-201.58 294.39,-233.09 268.86,-262.14000000000004 240.47,-288.4"/>
+<polygon class="l11d1" points="315.0,-420.0 279.0,-372.0 298.18,-357.61 333.38,-325.05 365.03999999999996,-289.04 392.84,-249.96000000000004 416.46000000000004,-208.23000000000002 435.67,-164.29000000000002 450.26000000000005,-118.61000000000001 460.07,-71.67 465.0,-23.98 465.0,0.0 525.0,0.0 525.0,-27.07 519.43,-80.92 508.35,-133.92 491.88,-185.49 470.20000000000005,-235.10000000000002 443.52000000000004,-282.21 412.15000000000003,-326.33000000000004 376.4,-366.99 336.66,-403.76"/>
+<polygon class="l14d0" points="345.0,-460.0 159.0,-212.0 169.93,-203.79999999999998 189.98999999999998,-185.24 208.04000000000002,-164.72000000000003 223.87,-142.45000000000002 237.34000000000003,-118.67000000000002 248.28,-93.63 256.6,-67.6 262.19,-40.85 265.0,-13.66 265.0,0.0 575.0,0.0 575.0,-29.65 568.9,-88.63 556.77,-146.67 538.73,-203.16 514.98,-257.49 485.76,-309.09 451.4,-357.40999999999997 412.24,-401.94000000000005 368.72,-442.21000000000004"/>
+<polygon class="l16d0" points="465.0,0.0 375.0,0.0 375.0,-19.342002565991766 371.027294259659,-57.8013651039447 363.1076295216587,-95.6496839589428 351.3471576813532,-132.4938045459591 335.8573042909316,-167.92851815205904 316.80296311345234,-201.58166337132772 294.393309635663,-233.09802862096774 268.8592372539602,-262.1318759584844 240.4636293521204,-288.4022779859098 225.00000000000003,-300.0 278.99999999999994,-372.0 298.17637064787965,-357.61772201409025 333.3807627460399,-325.0481240415156 365.04669036433705,-289.04197137903225 392.83703688654793,-249.95833662867182 416.4626957090684,-208.23148184794096 435.67284231864676,-164.28619545404098 450.25237047834133,-118.61031604105722 460.07270574034095,-71.67863489605531 465.0,-23.97799743400823"/>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 -0.0)">base</text>
+</g>
+<g id="Waveguide$Coplanar$Straight$6" >
+<polygon class="l11d1" points="0.0,45.0 0.0,105.0 225.01999999999998,105.0 225.01999999999998,45.0"/>
+<polygon class="l11d1" points="0.0,-105.0 0.0,-45.0 225.01999999999998,-45.0 225.01999999999998,-105.0"/>
+<polygon class="l14d0" points="0.0,-155.0 0.0,155.0 225.01999999999998,155.0 225.01999999999998,-155.0"/>
+<polygon class="l16d0" points="0.0,-45.0 0.0,45.0 225.01999999999998,45.0 225.01999999999998,-45.0"/>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 -0.0)">base</text>
+</g>
+<g id="Waveguide$Coplanar$Straight$9" >
+<polygon class="l11d1" points="0.0,45.0 0.0,105.0 225.01999999999998,105.0 225.01999999999998,45.0"/>
+<polygon class="l11d1" points="0.0,-105.0 0.0,-45.0 225.01999999999998,-45.0 225.01999999999998,-105.0"/>
+<polygon class="l14d0" points="0.0,-155.0 0.0,155.0 225.01999999999998,155.0 225.01999999999998,-155.0"/>
+<polygon class="l16d0" points="0.0,-45.0 0.0,45.0 225.01999999999998,45.0 225.01999999999998,-45.0"/>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 -0.0)">base</text>
+</g>
+<g id="Waveguide$Composite$1" >
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 -0.0)">base</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(660.0 -66.6)">port_a</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(931.02 254.25)">port_a_corner</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(660.0 -1726.2)">port_b</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(965.4399999999999 -2014.4900000000002)">port_b_corner</text>
+<text class="l39t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(660.0 -66.6)">a</text>
+<text class="l39t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(660.0 -1726.2)">b</text>
+<use transform="translate(0.0 0.0)" xlink:href="#Waveguide$Coplanar$1"/>
+</g>
+<g id="Waveguide$Coplanar$Straight" >
+<polygon class="l11d1" points="0.0,45.0 0.0,105.0 1800.0,105.0 1800.0,45.0"/>
+<polygon class="l11d1" points="0.0,-105.0 0.0,-45.0 1800.0,-45.0 1800.0,-105.0"/>
+<polygon class="l14d0" points="0.0,-155.0 0.0,155.0 1800.0,155.0 1800.0,-155.0"/>
+<polygon class="l16d0" points="0.0,-45.0 0.0,45.0 1800.0,45.0 1800.0,-45.0"/>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 -0.0)">base</text>
+</g>
+<g id="Airbridge$Rectangular" >
+<polygon class="l14d0" points="-170.0,170.0 -170.0,450.0 170.0,450.0 170.0,170.0"/>
+<polygon class="l14d0" points="-170.0,-450.0 -170.0,-170.0 170.0,-170.0 170.0,-450.0"/>
+<polygon class="l28d3" points="-120.0,220.0 -120.0,400.0 120.0,400.0 120.0,220.0"/>
+<polygon class="l28d3" points="-120.0,-400.0 -120.0,-220.0 120.0,-220.0 120.0,-400.0"/>
+<polygon class="l29d3" points="-100.0,-380.0 -100.0,380.0 100.0,380.0 100.0,-380.0"/>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 -0.0)">base</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 -220.0)">port_a</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 -640.0)">port_a_corner</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 220.0)">port_b</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 640.0)">port_b_corner</text>
+<text class="l39t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 -220.0)">a</text>
+<text class="l39t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 220.0)">b</text>
+</g>
+<g id="Waveguide$Coplanar$Straight$3" >
+<polygon class="l11d1" points="0.0,45.0 0.0,105.0 165.01000000000002,105.0 165.01000000000002,45.0"/>
+<polygon class="l11d1" points="0.0,-105.0 0.0,-45.0 165.01000000000002,-45.0 165.01000000000002,-105.0"/>
+<polygon class="l14d0" points="0.0,-155.0 0.0,155.0 165.01000000000002,155.0 165.01000000000002,-155.0"/>
+<polygon class="l16d0" points="0.0,-45.0 0.0,45.0 165.01000000000002,45.0 165.01000000000002,-45.0"/>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 -0.0)">base</text>
+</g>
+<g id="Waveguide$Composite" >
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 -0.0)">base</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(-300.0 -0.0)">port_a</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(-300.0 420.0)">port_a_corner</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(-300.0 -1800.0)">port_b</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(-300.0 -2220.0)">port_b_corner</text>
+<text class="l39t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(-300.0 -0.0)">a</text>
+<text class="l39t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(-300.0 -1800.0)">b</text>
+<use transform="translate(0.0 0.0)" xlink:href="#Waveguide$Coplanar"/>
+</g>
+<g id="Waveguide$Coplanar$Straight$2" >
+<polygon class="l11d1" points="0.0,45.0 0.0,105.0 675.1,105.0 675.1,45.0"/>
+<polygon class="l11d1" points="0.0,-105.0 0.0,-45.0 675.1,-45.0 675.1,-105.0"/>
+<polygon class="l14d0" points="0.0,-155.0 0.0,155.0 675.1,155.0 675.1,-155.0"/>
+<polygon class="l16d0" points="0.0,-45.0 0.0,45.0 675.1,45.0 675.1,-45.0"/>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 -0.0)">base</text>
+</g>
+<g id="Waveguide$Coplanar$Straight$4" >
+<polygon class="l11d1" points="0.0,45.0 0.0,105.0 480.02000000000004,105.0 480.02000000000004,45.0"/>
+<polygon class="l11d1" points="0.0,-105.0 0.0,-45.0 480.02000000000004,-45.0 480.02000000000004,-105.0"/>
+<polygon class="l14d0" points="0.0,-155.0 0.0,155.0 480.02000000000004,155.0 480.02000000000004,-155.0"/>
+<polygon class="l16d0" points="0.0,-45.0 0.0,45.0 480.02000000000004,45.0 480.02000000000004,-45.0"/>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 -0.0)">base</text>
+</g>
+<g id="Waveguide$Coplanar$Curved$2" >
+<polygon class="l11d1" points="105.0,-360.0 88.2,-302.40000000000003 103.17999999999999,-298.03000000000003 132.13,-286.37 159.79000000000002,-271.90999999999997 185.88,-254.79 210.16000000000003,-235.17 232.37,-213.24 252.31,-189.23000000000002 269.78000000000003,-163.37 284.6,-135.9 296.64,-107.11 305.78,-77.26 311.92,-46.660000000000004 315.0,-15.61 315.0,0.0 375.0,0.0 375.0,-18.580000000000002 371.33000000000004,-55.55 364.02,-91.98 353.15,-127.50999999999999 338.81,-161.79000000000002 321.15999999999997,-194.48000000000002 300.37,-225.27999999999997 276.63,-253.85999999999999 250.19000000000003,-279.96000000000004 221.29000000000002,-303.32 190.23,-323.7 157.3,-340.91999999999996 122.83,-354.80000000000007"/>
+<polygon class="l11d1" points="147.0,-504.0 130.2,-446.4 152.31,-439.95 195.04999999999998,-422.74 235.88,-401.39000000000004 274.40000000000003,-376.11 310.23,-347.15000000000003 343.02,-314.78999999999996 372.46000000000004,-279.34000000000003 398.24,-241.16 420.13,-200.62 437.9,-158.11 451.38,-114.06 460.45000000000005,-68.88 465.0,-23.040000000000003 465.0,0.0 525.0,0.0 525.0,-26.009999999999998 519.86,-77.77 509.63,-128.77 494.4,-178.51 474.34,-226.51 449.63,-272.28000000000003 420.52,-315.39 387.28000000000003,-355.41 350.26000000000005,-391.94000000000005 309.81,-424.64 266.32,-453.17999999999995 220.22000000000003,-477.28999999999996 171.97,-496.72"/>
+<polygon class="l14d0" points="161.0,-552.0 74.2,-254.4 86.8,-250.72 111.16,-240.92 134.43,-228.75 156.38,-214.34 176.8,-197.83999999999997 195.49,-179.39 212.26,-159.19 226.96,-137.44 239.43,-114.33 249.56,-90.11000000000001 257.24,-65.0 262.40000000000003,-39.260000000000005 265.0,-13.129999999999999 265.0,0.0 575.0,0.0 575.0,-28.490000000000002 569.37,-85.18 558.1600000000001,-141.04000000000002 541.49,-195.51000000000002 519.51,-248.07999999999998 492.45000000000005,-298.21000000000004 460.56000000000006,-345.42 424.17,-389.25000000000006 383.62,-429.27 339.30999999999995,-465.09000000000003 291.68,-496.34999999999997 241.19,-522.74 188.35000000000002,-544.02"/>
+<polygon class="l16d0" points="465.0,0.0 375.0,0.0 375.0,-18.582316450435407 371.3305910537155,-55.55317398465486 364.0186380569443,-91.97902041545638 353.142961917942,-127.50801496150734 338.8126087741668,-161.78479111038766 321.1600988818865,-194.48256107777794 300.3646686174391,-225.27837000095474 276.63432337886707,-253.85656229165048 250.18977630577822,-279.95291985229824 221.2846195321629,-303.3127870502524 190.21955827862962,-323.70732568292567 157.30641522055413,-340.9182125329309 122.82778567264204,-354.79539210233145 104.98920226285838,-360.00315080433637 130.2107977371416,-446.39684919566366 152.31221432735796,-439.9446078976686 195.05358477944588,-422.7417874670691 235.8804417213704,-401.39267431707447 274.39538046783656,-376.10721294974803 310.23022369422176,-347.14708014770173 343.02567662113296,-314.7834377083496 372.4553313825607,-279.3416299990455 398.2399011181135,-241.15743892222207 420.12739122583326,-200.61520888961238 437.897038082058,-158.1119850384926 451.3813619430557,-114.06097958454362 460.44940894628445,-68.88682601534515 465.0,-23.03768354956459"/>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 -0.0)">base</text>
+</g>
+<g id="Waveguide$Coplanar" >
+<polygon class="l14d0" points="-455.0,-50.0 -455.0,0.0 -145.0,0.0 -145.0,-50.0"/>
+<polygon class="l14d0" points="-455.0,1800.0 -455.0,1850.0 -145.0,1850.0 -145.0,1800.0"/>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 -0.0)">base</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(-300.0 -0.0)">port_a</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(-300.0 420.0)">port_a_corner</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(-300.0 -1800.0)">port_b</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(-300.0 -2220.0)">port_b_corner</text>
+<text class="l39t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(-300.0 -0.0)">a</text>
+<text class="l39t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(-300.0 -1800.0)">b</text>
+<use transform="translate(-300.0 0.0) rotate(90.0)" xlink:href="#Waveguide$Coplanar$Straight"/>
+</g>
+<g id="Waveguide$Composite$2" >
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(0.0 -0.0)">base</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(1200.0 -225.0)">port_a</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(1536.0 27.0)">port_a_corner</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(1200.0 -225.0)">port_b</text>
+<text class="l225t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(864.0 -477.0)">port_b_corner</text>
+<text class="l39t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(1200.0 -225.0)">a</text>
+<text class="l39t0" text-anchor="middle" dominant-baseline="central" transform="scale(1 -1) translate(1200.0 -225.0)">b</text>
+<use transform="translate(1800.0 225.0) rotate(216.86989764584402) scale(1.0)" xlink:href="#Airbridge$Rectangular"/>
+<use transform="translate(0.0 0.0)" xlink:href="#Waveguide$Coplanar$2"/>
+</g>
+</defs>
+<rect x="-669.65" y="-2087.8900000000003" width="4722.3" height="2539.5400000000004" fill="#222" stroke="none"/>
+<g id="logo" transform="scale(1 -1)">
+<use transform="translate(0.0 0.0)" xlink:href="#Waveguide$Composite"/>
+<use transform="translate(0.0 0.0)" xlink:href="#Waveguide$Composite$1"/>
+<use transform="translate(0.0 0.0)" xlink:href="#Waveguide$Composite$2"/>
+<use transform="translate(0.0 0.0)" xlink:href="#Waveguide$Composite$3"/>
+</g>
+</svg>
