@@ -50,6 +50,20 @@ The required packages are defined in :git_url:`setup.py <klayout_package/python/
 if there are problems with some specific package, you may try modifying it or
 install those packages manually.
 
+PyPI Installation
+^^^^^^^^^^^^^^^^^
+
+If you do not need all KQCircuits sources but only the core KQC classes you may simply run ``pip
+install kqcircuits`` to get the Python package only. You can use this the same way as the full
+developer installation but remember that scripts, masks, documentation and notebooks are not part of
+the Python package. A new Python package is automatically uploaded to PyPI for every tagged commit
+in GitHub.
+
+The ``kqcircuits`` Python package may be used with an independently downloaded KQCircuits source
+directory to run tests, simulation scripts or build documentation or masks from there. You are
+supposed to run most of these from the source directory or you may need to specify the
+``KQC_ROOT_PATH`` environment variable so that ``kqcircuits`` finds the sources.
+
 Usage
 -----
 
