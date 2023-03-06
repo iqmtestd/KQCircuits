@@ -209,7 +209,7 @@ jobs:
         with:
           name: pypi_package
           path: dist
-      - name debug:
+      - name: debug
         run: echo github.event_name github.ref; ls -l dist
       - name: Publish 🐍 📦 to TestPyPI
         if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
