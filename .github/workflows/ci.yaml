@@ -156,11 +156,8 @@ jobs:
   check_package_building:
     name: Build kqcircuits Python package
     runs-on: ubuntu-latest
-    container: ghcr.io/iqm-finland/kqcircuits
     steps:
       - uses: actions/checkout@v2
-      - name: Init KQCircuits
-        run: ci/init_kqc.sh
       - name: Build and test package
         run: |
           python -m pip install --upgrade build twine
@@ -202,21 +199,17 @@ jobs:
 
   publish-python-package:
     name: PyPI upload
-    needs: [pages, publish_test_results, check_package_building, verify_layer_properties, check_license]
+    needs: [pages, publish_test_results, check_package_building, shellcheck, verify_layer_properties, check_license]
     runs-on: ubuntu-latest
-    if: ${{ github.ref == 'refs/heads/main' }}
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
     steps:
-      - name: Upload PyPI artifact
+      - name: Download PyPI artifact
         uses: actions/download-artifact@v2
         with:
           name: pypi_package
           path: dist
 
-      - name: Display structure of downloaded files
-        run: ls -R
-
       - name: Publish 🐍 📦 to TestPyPI
-        if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           password: ${{ secrets.TEST_PYPI_API_TOKEN }}
