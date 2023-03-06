@@ -157,8 +157,8 @@ jobs:
     name: Build kqcircuits Python package
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Build and test package
-        uses: actions/checkout@v2
         run: |
           git fetch --unshallow --tags
           echo $?
