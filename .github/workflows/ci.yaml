@@ -158,7 +158,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build and test package
+        uses: actions/checkout@v2
         run: |
+          git fetch --unshallow --tags
+          echo $?
+          git tag --list
           python -m pip install --upgrade build twine
           cd klayout_package/python
           python -m build
