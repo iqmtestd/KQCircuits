@@ -200,6 +200,7 @@ jobs:
 
   publish-python-package:
     name: PyPI upload
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
     needs: [pages, publish_test_results, check_package_building, shellcheck, verify_layer_properties, check_license]
     runs-on: ubuntu-latest
     steps:
@@ -208,10 +209,7 @@ jobs:
         with:
           name: pypi_package
           path: dist
-      - name: debug
-        run: echo "event name and ref:" ${{github.event_name}} ${{github.ref}}
       - name: Publish 🐍 📦 to TestPyPI
-        if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           password: ${{ secrets.TEST_PYPI_API_TOKEN }}
