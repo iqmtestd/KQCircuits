@@ -161,8 +161,6 @@ jobs:
       - name: Build and test package
         run: |
           git fetch --unshallow --tags
-          echo $?
-          git tag --list
           python -m pip install --upgrade build twine
           cd klayout_package/python
           python -m build
