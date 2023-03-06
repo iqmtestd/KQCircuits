@@ -6,19 +6,20 @@ on:
       - main
     tags:
       - v*
+
 jobs:
   publish-python-package:
     name: PyPI upload
     runs-on: ubuntu-latest
     permissions:
       contents: read
+
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/download-artifact@v2
+      - uses: actions/checkout@v3
+
+      - uses: actions/download-artifact@v3
         with:
-          name: PyPI package
-          path: klayout_package/python/dist/
+          name: pypi_package
 
       - name: Display structure of downloaded files
         run: ls -R
-        working-directory: klayout_package/python/dist/
