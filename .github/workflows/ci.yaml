@@ -200,17 +200,14 @@ jobs:
 
   publish-python-package:
     name: PyPI upload
-    needs: [ check_copyright_headers, check_license, verify_documentation, check_package_building]
+    needs: [pages, publish_test_results, check_package_building, verify_layer_properties, check_license]
     runs-on: ubuntu-latest
-    container: ghcr.io/iqm-finland/kqcircuits
     if: ${{ github.ref == 'refs/heads/main' }}
     steps:
-      - uses: actions/checkout@v2
       - name: Upload PyPI artifact
         uses: actions/download-artifact@v2
         with:
           name: pypi_package
-          path: dist
 
       - name: Display structure of downloaded files
         run: ls -R
