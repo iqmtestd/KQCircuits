@@ -167,7 +167,7 @@ jobs:
           python -m twine check dist/*
           echo "GIT_TAG=$(git tag --contains HEAD | grep -P '^v\d+\.\d+\.\d+')" >> $GITHUB_ENV
       - name: Publish 📦 to PyPI
-        if env.GIT_TAG
+        if: env.GIT_TAG
         run: ls klayout_package/python/dist/;
 
 #        uses: pypa/gh-action-pypi-publish@release/v1
