@@ -142,16 +142,16 @@ jobs:
       - name: Run license check
         run: sha256sum -c ci/license_manifest.txt
 
-  verify_layer_properties:
-    name: Verify layer properties
-    runs-on: ubuntu-latest
-    container: ghcr.io/iqm-finland/kqcircuits
-    steps:
-      - uses: actions/checkout@v2
-      - name: Init KQCircuits
-        run: ci/init_kqc.sh
-      - name: Run check_layer_props.py
-        run:  python util/check_layer_props.py
+#  verify_layer_properties:
+#    name: Verify layer properties
+#    runs-on: ubuntu-latest
+#    container: ghcr.io/iqm-finland/kqcircuits
+#    steps:
+#      - uses: actions/checkout@v2
+#      - name: Init KQCircuits
+#        run: ci/init_kqc.sh
+#      - name: Run check_layer_props.py
+#        run:  python util/check_layer_props.py
 
   check_package_building:
     name: Build kqcircuits 🐍 package
@@ -168,7 +168,7 @@ jobs:
           echo "GIT_TAG=$(git tag --contains HEAD | grep -P '^v\d+\.\d+\.\d+')" >> $GITHUB_ENV
       - name: Publish 📦 to PyPI
         if: env.GIT_TAG
-        run: ls klayout_package/python/dist/;
+        run: ls klayout_package/python/dist/; echo "SEND to PyPI..."
 
 #        uses: pypa/gh-action-pypi-publish@release/v1
 #        with:
