@@ -165,16 +165,14 @@ jobs:
           cd klayout_package/python
           python -m build
           python -m twine check dist/*
-          echo "GIT_TAG=$(git tag --contains HEAD | grep -P '^v\d+\.\d+\.\d+')" >> $GITHUB_ENV
+          echo "GIT_TAG=$(git tag --contains HEAD | grep -P '^v\d+\.\d+\.\d+.*')" >> $GITHUB_ENV
       - name: Publish 📦 to PyPI
         if: env.GIT_TAG
-        run: ls klayout_package/python/dist/; echo "SEND to PyPI..."
-
-#        uses: pypa/gh-action-pypi-publish@release/v1
-#        with:
-#          password: ${{ secrets.TEST_PYPI_API_TOKEN }}
-#          repository_url: https://test.pypi.org/legacy/
-#          packages_dir: klayout_package/python/dist/
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          password: ${{ secrets.TEST_PYPI_API_TOKEN }}
+          repository_url: https://test.pypi.org/legacy/
+          packages_dir: klayout_package/python/dist/
 
 #  pages:
 #    name: Deploy documentation
