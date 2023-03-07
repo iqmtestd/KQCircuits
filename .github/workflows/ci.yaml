@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: debug
-        run: echo ${{github.event_name}} ${{github.ref}}
+        run: echo "event and ref:" ${{github.event_name}} ${{github.ref}}
 
   test:
     name: Tests
