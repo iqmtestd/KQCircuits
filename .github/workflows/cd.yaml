@@ -3,8 +3,6 @@ name: CD
 on:
   workflow_run:
     workflows: ["CI"]
-    tags:
-      - v*
     types:
       - completed
 
@@ -15,70 +13,70 @@ env:
   KL_HASH: f5fbb6b33f96008bc7037c43b0bd6f24
 
 jobs:
-  build-and-push-docker:
-    name: Docker
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
-    steps:
-      - uses: actions/checkout@v2
-      - name: Log in to the Container registry
-        uses: docker/login-action@v1
-        with:
-          registry: ${{ env.REGISTRY }}
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-      - name: Extract metadata (tags, labels) for Docker
-        id: meta
-        uses: docker/metadata-action@v3
-        with:
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
-      - name: Build and push Docker image
-        uses: docker/build-push-action@v2
-        with:
-          context: .
-          file: ci/Dockerfile
-          build-args: |
-            KL_FILE=${{ env.KL_FILE }}
-            KL_HASH=${{ env.KL_HASH }}
-          push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
-
-  build-and-push-singularity:
-    name: Singularity
-    runs-on: ubuntu-latest
-    container:
-      image: quay.io/singularity/singularity:v3.10.2
-      options: --privileged
-    permissions:
-      contents: read
-      packages: write
-    if: github.event_name != 'pull_request'
-    steps:
-      - uses: actions/checkout@v2
-      - name: Extract metadata (tags, labels)
-        id: meta
-        uses: docker/metadata-action@v3
-        with:
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
-      - name: Install dependencies
-        run: apk update && apk add debootstrap perl
-      - name: Build Container
-        run: |
-          cd singularity && ./singularity.sh
-          echo "Tag is ${{ steps.meta.outputs.tags }}."
-      - name: Login and Deploy Container
-        working-directory: ./singularity/libexec
-        shell: bash
-        run: |
-          echo ${{ secrets.GITHUB_TOKEN }} | singularity remote login -i -u ${{ github.repository_owner }} \
-            --password-stdin oras://ghcr.io
-          # loop over tags separated with newlines
-          while IFS= read -r remote; do
-            singularity push -U kqclib "oras://${remote}-singularity"
-          done <<< "${{ steps.meta.outputs.tags }}"
+#  build-and-push-docker:
+#    name: Docker
+#    runs-on: ubuntu-latest
+#    permissions:
+#      contents: read
+#      packages: write
+#    steps:
+#      - uses: actions/checkout@v2
+#      - name: Log in to the Container registry
+#        uses: docker/login-action@v1
+#        with:
+#          registry: ${{ env.REGISTRY }}
+#          username: ${{ github.actor }}
+#          password: ${{ secrets.GITHUB_TOKEN }}
+#      - name: Extract metadata (tags, labels) for Docker
+#        id: meta
+#        uses: docker/metadata-action@v3
+#        with:
+#          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+#      - name: Build and push Docker image
+#        uses: docker/build-push-action@v2
+#        with:
+#          context: .
+#          file: ci/Dockerfile
+#          build-args: |
+#            KL_FILE=${{ env.KL_FILE }}
+#            KL_HASH=${{ env.KL_HASH }}
+#          push: ${{ github.event_name != 'pull_request' }}
+#          tags: ${{ steps.meta.outputs.tags }}
+#          labels: ${{ steps.meta.outputs.labels }}
+#
+#  build-and-push-singularity:
+#    name: Singularity
+#    runs-on: ubuntu-latest
+#    container:
+#      image: quay.io/singularity/singularity:v3.10.2
+#      options: --privileged
+#    permissions:
+#      contents: read
+#      packages: write
+#    if: github.event_name != 'pull_request'
+#    steps:
+#      - uses: actions/checkout@v2
+#      - name: Extract metadata (tags, labels)
+#        id: meta
+#        uses: docker/metadata-action@v3
+#        with:
+#          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+#      - name: Install dependencies
+#        run: apk update && apk add debootstrap perl
+#      - name: Build Container
+#        run: |
+#          cd singularity && ./singularity.sh
+#          echo "Tag is ${{ steps.meta.outputs.tags }}."
+#      - name: Login and Deploy Container
+#        working-directory: ./singularity/libexec
+#        shell: bash
+#        run: |
+#          echo ${{ secrets.GITHUB_TOKEN }} | singularity remote login -i -u ${{ github.repository_owner }} \
+#            --password-stdin oras://ghcr.io
+#          # loop over tags separated with newlines
+#          while IFS= read -r remote; do
+#            singularity push -U kqclib "oras://${remote}-singularity"
+#          done <<< "${{ steps.meta.outputs.tags }}"
 
   publish-python-package:
     name: 🐍 📦 to PyPI
@@ -91,9 +89,9 @@ jobs:
         with:
           name: pypi_package
           path: dist
-      - name: Publish to TestPyPI
-        uses: pypa/gh-action-pypi-publish@release/v1
-        with:
-          password: ${{ secrets.TEST_PYPI_API_TOKEN }}
-          repository_url: https://test.pypi.org/legacy/
-          packages_dir: dist/
+#      - name: Publish to TestPyPI
+#        uses: pypa/gh-action-pypi-publish@release/v1
+#        with:
+#          password: ${{ secrets.TEST_PYPI_API_TOKEN }}
+#          repository_url: https://test.pypi.org/legacy/
+#          packages_dir: dist/

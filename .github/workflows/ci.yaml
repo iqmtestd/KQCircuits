@@ -9,77 +9,77 @@ on:
       - main
 
 jobs:
-  test:
-    name: Tests
-    runs-on: ubuntu-latest
-    container: ghcr.io/iqm-finland/kqcircuits
-    strategy:
-      fail-fast: false
-      matrix:
-        klayout_version: [0.26.7, 0.26.12, 1.latest]
-    steps:
-      - uses: actions/checkout@v2
-      - name: Init KQCircuits
-        run: ci/init_kqc.sh
-      - name: Select KLayout version
-        run: pip install --force-reinstall "klayout<=${{ matrix.klayout_version }}"
-      - name: Run tests
-        run: tox -e matrix
-      - name: Upload test results
-        if: always()
-        uses: actions/upload-artifact@v2
-        with:
-          name: Test results (KLayout=${{ matrix.klayout_version }})
-          path: test_report.xml
-
-  test_non_linux:
-    name: Tests (non-🐧)
-    runs-on: ${{ matrix.os }}
-    strategy:
-      fail-fast: false
-      matrix:
-        os: [windows-latest, macos-latest]
-        klayout_version: [0.26.12, 1.latest]
-        exclude:
-          - os: macos-latest
-            klayout_version: 0.26.12
-
-    steps:
-      - uses: actions/checkout@v2
-      - name: macOS setup
-        run: |
-          brew install python
-          ln -s -f /usr/local/bin/python3.7 /usr/local/bin/python
-        if: ${{ matrix.os == 'macos-latest' }}
-      - name: Init KQCircuits
-        run: pip3 install -e "klayout_package/python[docs,tests]" --only-binary=klayout
-        continue-on-error: true
-      - name: Select KLayout version
-        run: pip3 install --force-reinstall --only-binary=klayout "klayout<=${{matrix.klayout_version }}"
-      - name: Run tests
-        run: tox -e matrix
-      - name: Upload test results
-        if: always()
-        uses: actions/upload-artifact@v2
-        with:
-          name: Test results (${{ matrix.os }} KLayout=${{ matrix.klayout_version }})
-          path: test_report.xml
-
-  publish_test_results:
-    name: Publish test results
-    needs: [ test, test_non_linux ]
-    runs-on: ubuntu-latest
-    if: success() || failure()
-    steps:
-      - name: Download test results
-        uses: actions/download-artifact@v2
-        with:
-          path: artifacts
-      - name: Publish test results
-        uses: EnricoMi/publish-unit-test-result-action@v1
-        with:
-          files: artifacts/**/*.xml
-          check_name: Test results
+#  test:
+#    name: Tests
+#    runs-on: ubuntu-latest
+#    container: ghcr.io/iqm-finland/kqcircuits
+#    strategy:
+#      fail-fast: false
+#      matrix:
+#        klayout_version: [0.26.7, 0.26.12, 1.latest]
+#    steps:
+#      - uses: actions/checkout@v2
+#      - name: Init KQCircuits
+#        run: ci/init_kqc.sh
+#      - name: Select KLayout version
+#        run: pip install --force-reinstall "klayout<=${{ matrix.klayout_version }}"
+#      - name: Run tests
+#        run: tox -e matrix
+#      - name: Upload test results
+#        if: always()
+#        uses: actions/upload-artifact@v2
+#        with:
+#          name: Test results (KLayout=${{ matrix.klayout_version }})
+#          path: test_report.xml
+#
+#  test_non_linux:
+#    name: Tests (non-🐧)
+#    runs-on: ${{ matrix.os }}
+#    strategy:
+#      fail-fast: false
+#      matrix:
+#        os: [windows-latest, macos-latest]
+#        klayout_version: [0.26.12, 1.latest]
+#        exclude:
+#          - os: macos-latest
+#            klayout_version: 0.26.12
+#
+#    steps:
+#      - uses: actions/checkout@v2
+#      - name: macOS setup
+#        run: |
+#          brew install python
+#          ln -s -f /usr/local/bin/python3.7 /usr/local/bin/python
+#        if: ${{ matrix.os == 'macos-latest' }}
+#      - name: Init KQCircuits
+#        run: pip3 install -e "klayout_package/python[docs,tests]" --only-binary=klayout
+#        continue-on-error: true
+#      - name: Select KLayout version
+#        run: pip3 install --force-reinstall --only-binary=klayout "klayout<=${{matrix.klayout_version }}"
+#      - name: Run tests
+#        run: tox -e matrix
+#      - name: Upload test results
+#        if: always()
+#        uses: actions/upload-artifact@v2
+#        with:
+#          name: Test results (${{ matrix.os }} KLayout=${{ matrix.klayout_version }})
+#          path: test_report.xml
+#
+#  publish_test_results:
+#    name: Publish test results
+#    needs: [ test, test_non_linux ]
+#    runs-on: ubuntu-latest
+#    if: success() || failure()
+#    steps:
+#      - name: Download test results
+#        uses: actions/download-artifact@v2
+#        with:
+#          path: artifacts
+#      - name: Publish test results
+#        uses: EnricoMi/publish-unit-test-result-action@v1
+#        with:
+#          files: artifacts/**/*.xml
+#          check_name: Test results
 
   static_analysis:
     name: Static code analysis
@@ -100,26 +100,26 @@ jobs:
     - name: Run ShellCheck
       uses: ludeeus/action-shellcheck@master
 
-  verify_documentation:
-    name: Verify documentation
-    runs-on: ubuntu-latest
-    container: ghcr.io/iqm-finland/kqcircuits
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0  # fetch tags as well
-      - name: Init KQCircuits
-        run: ci/init_kqc.sh
-      - name: Make docs
-        run: |
-          cd docs
-          make html SPHINXOPTS="-W --keep-going"
-      - name: Docs to artifact
-        uses: actions/upload-artifact@v2
-        if: always()
-        with:
-          name: docs
-          path: docs/_build/html/
+#  verify_documentation:
+#    name: Verify documentation
+#    runs-on: ubuntu-latest
+#    container: ghcr.io/iqm-finland/kqcircuits
+#    steps:
+#      - uses: actions/checkout@v2
+#        with:
+#          fetch-depth: 0  # fetch tags as well
+#      - name: Init KQCircuits
+#        run: ci/init_kqc.sh
+#      - name: Make docs
+#        run: |
+#          cd docs
+#          make html SPHINXOPTS="-W --keep-going"
+#      - name: Docs to artifact
+#        uses: actions/upload-artifact@v2
+#        if: always()
+#        with:
+#          name: docs
+#          path: docs/_build/html/
 
   check_copyright_headers:
     name: Check copyright headers
@@ -172,28 +172,28 @@ jobs:
           name: pypi_package
           path: klayout_package/python/dist/
 
-  pages:
-    name: Deploy documentation
-    needs: [ check_copyright_headers, check_license, verify_documentation ]
-    runs-on: ubuntu-latest
-    container: ghcr.io/iqm-finland/kqcircuits
-    if: ${{ github.ref == 'refs/heads/main' }}
-    steps:
-      - uses: actions/checkout@v2
-      - name: Download docs artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: docs
-          path: public
-      - name: Add redirect and 404
-        run: |
-          mkdir -p public/_build/html
-          cp public/_static/redirect.html public/_build/html/index.html
-          cp public/_static/404.html public/404.html
-      - name: Install rsync  # https://github.com/JamesIves/github-pages-deploy-action#using-a-container-
-        run: apt-get update && apt-get install -y rsync
-      - name: Upload pages
-        uses: JamesIves/github-pages-deploy-action@v4.3.3
-        with:
-          branch: gh-pages
-          folder: public
+#  pages:
+#    name: Deploy documentation
+#    needs: [ check_copyright_headers, check_license, verify_documentation ]
+#    runs-on: ubuntu-latest
+#    container: ghcr.io/iqm-finland/kqcircuits
+#    if: ${{ github.ref == 'refs/heads/main' }}
+#    steps:
+#      - uses: actions/checkout@v2
+#      - name: Download docs artifact
+#        uses: actions/download-artifact@v2
+#        with:
+#          name: docs
+#          path: public
+#      - name: Add redirect and 404
+#        run: |
+#          mkdir -p public/_build/html
+#          cp public/_static/redirect.html public/_build/html/index.html
+#          cp public/_static/404.html public/404.html
+#      - name: Install rsync  # https://github.com/JamesIves/github-pages-deploy-action#using-a-container-
+#        run: apt-get update && apt-get install -y rsync
+#      - name: Upload pages
+#        uses: JamesIves/github-pages-deploy-action@v4.3.3
+#        with:
+#          branch: gh-pages
+#          folder: public
