@@ -7,8 +7,20 @@ on:
   push:
     branches:
       - main
+  push:
+    tags:
+      - 'v*'
 
 jobs:
+
+  publish-tmp-test:
+    name: tagtest
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    steps:
+      - name: debug
+        run: echo ${{github.event_name}} ${{github.ref}}
+
   test:
     name: Tests
     runs-on: ubuntu-latest
