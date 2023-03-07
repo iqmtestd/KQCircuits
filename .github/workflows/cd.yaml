@@ -84,6 +84,8 @@ jobs:
     name: 🐍 📦 to PyPI
     runs-on: ubuntu-latest
     steps:
+      - name: Debug
+        run: echo "Works. Tag is ${GITHUB_REF##*/}"
       - name: Download PyPI artifact
         uses: actions/download-artifact@v2
         with:
