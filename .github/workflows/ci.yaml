@@ -166,6 +166,7 @@ jobs:
           python -m pip install --upgrade build twine
           cd klayout_package/python
           python -m build
+          date > dist/kqcircuits.*gz  # corrupt tgz
           python -m twine check dist/*
       - name: Publish to PyPI
         if: env.GIT_TAG
